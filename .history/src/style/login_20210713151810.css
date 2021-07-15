@@ -1,0 +1,9 @@
+input{
+    display: block;
+}
+form{
+    background-color: blue;
+}
+#login{
+    background-color: blueviolet;
+}

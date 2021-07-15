@@ -1,0 +1,83 @@
+span{
+    background-image: url("/public/Ellipse\ 5.svg");
+    position: absolute;
+    width: 1256.04px;
+    height: 839.85px;
+    left: 729.46px;
+    top: -407px;
+
+    background: linear-gradient(143.41deg, rgba(152, 119, 205, 0.25) 9.98%, rgba(220, 220, 220, 0.25) 72.6%, rgba(152, 119, 205, 0.25) 90.52%);
+    transform: rotate(16.57deg);
+    
+}
+
+img{
+    position:absolute;
+    width: 40%;
+    left:40%;
+    top:30%;
+    margin-left: 150px;
+    margin-top: -50px;
+}
+
+
+
+#page-home .content{
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#page-home main{
+    max-width: 560px;
+
+    flex: 1;
+   
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+    margin-left: 50px;
+    margin-top: 100px;
+
+    
+}
+#page-home main h1{
+    font-size: 34px;
+    color: #190933;
+}
+
+#page-home main a{
+    width: 100%;
+    max-width: 360px;
+    height: 60px;
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+
+    margin-top: 20px;
+    background: #9877CD;
+
+    transition: 400ms;
+
+  
+}
+#page-home main a:hover{
+    background-color: #190933;
+}
+
+#page-home main a strong{
+    flex: 1;
+    color: white;
+    text-align: center;
+}
+

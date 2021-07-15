@@ -1,0 +1,25 @@
+fieldset{
+    border: 0;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+input{
+    margin: 20px;
+    padding: 10px 20px;
+
+}
+form button{
+    width: 260px;
+    height: 35px;
+    background-color: #3A2C51;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+    transition: 400ms;

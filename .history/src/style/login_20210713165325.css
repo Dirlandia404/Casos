@@ -1,0 +1,27 @@
+img{
+    position:absolute;
+    width: 40%;
+    left:40%;
+    top:30%;
+    margin-left: 150px;
+    margin-top: -50px;
+}
+
+
+input{
+    display: block;
+    height: 55px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+
+
+}
+
+
+#login{
+    width: 320px;
+    margin: 200px 200px;
+   
+}

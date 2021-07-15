@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecoleta</title>
+    <!--pegar fontes-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="/src/style/home.css">
+
+
+
+    <link rel="stylesheet" href="/src/style/midia.css">
+</head>
+<body>
+
+    <div id="page-create-point">
+
+        <header>
+            <img src="/assents/logo.svg" alt="logomarca">
+            <a href="/index.html">
+                <span></span>
+                Voltar Para Home
+            </a> 
+    
+        </header>
+       <form action="">
+
+           <h1>Cadastro do ponto de Coleta</h1>
+           <fieldset>
+                <legend>
+                    <h2>Dados da Entidade</h2>
+                </legend>
+
+                <div class="field">
+                    <label for="name">Nome da Entidade</label>
+                    <input type="text" name="name" required>
+                </div>
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="adress">Endereço</label>
+                        <input type="text" name="adress" required>
+
+                    </div>
+                    <div class="field">
+                        <label for="adress2">Numero/Complemento</label>
+                        <input type="text" name="adress2" required>
+
+                    </div>
+                </div>
+                
+                <div class="field-group">
+                    <div class="field">
+                        <label for="states">Estado</label>
+                        <select name="uf" required>
+                            <option value="">Selecione o Estado</option>
+                           
+                        </select>
+
+                    </div>
+                    <div class="field">
+                        <label for="cities">Cidade</label>
+                        <select name="city" disabled required>
+                            <option value="">Selecione a Cidade</option>
+                        </select>
+
+                        <input type="hidden" name="state">
+                    </div>
+                    
+                </div>
+                
+           </fieldset>
+
+           <fieldset>
+               <legend>
+                    <h2>Itens de Coleta</h2>
+               </legend>
+
+               <div class="itens-grid">
+                   <li data-id="1">
+                       <img src="/assents/lampadas.svg" alt="lâmpadas">
+                       <span>lâmpadas</span>
+                    </li>
+                    <li data-id="2">
+                        <img src="/assents/baterias.svg" alt="pilhas e Baterias">
+                        <span>pilhas e Baterias</span>
+                     </li>
+                     <li data-id="3">
+                        <img src="/assents/papeis-papelao.svg" alt="Papeis e Papelão">
+                        <span>Papeis e Papelão</span>
+                     </li>
+                     <li data-id="4">
+                        <img src="/assents/eletronicos.svg" alt="Residuos Eletronicos">
+                        <span>Residuos Eletronicos</span>
+                     </li>
+                     <li data-id="5">
+                        <img src="/assents/organicos.svg" alt="Residuos Orgânicos">
+                        <span>Residuos Orgânicos</span>
+                     </li>
+                     <li data-id="6">
+                        <img src="/assents/oleo.svg" alt="Óleo de Cozinha">
+                        <span>Óleo de Cozinha</span>
+                     </li>
+
+               </div>
+               <input type="hidden" name= "itens">
+               
+               
+           </fieldset>
+                   
+
+           <button type="submit">Cadastro do ponto de Coleta</button>
+
+       </form>
+</div>
+
+
+</body>
+</html>

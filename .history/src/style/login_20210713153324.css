@@ -1,0 +1,24 @@
+input{
+    display: block;
+    height: 55px;
+    width: 80%;
+
+    max-width: 360px;
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+
+    margin-top: 40px;
+
+    background: #EDEBEB;
+
+    transition: 400ms;
+}
+
+#login{
+    width: 420px;
+    margin: 150px auto 0px auto;
+   
+}

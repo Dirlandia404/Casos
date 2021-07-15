@@ -1,0 +1,26 @@
+form{
+    background-color: #EFEFEF;
+    /*preenchimento da caixa*/
+    padding: 64px;
+    max-width: 800px;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+fieldset{
+    border: 0;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+input{
+    margin: 20px;
+    padding: 10px 20px;
+
+}

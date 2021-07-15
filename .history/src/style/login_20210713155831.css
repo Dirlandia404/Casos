@@ -1,0 +1,42 @@
+img{
+    position:absolute;
+    left:50%;
+    top:45%;
+    margin-left:-200px;
+    margin-top:-70px;
+}
+form{
+    background-color: red;
+}
+
+input,button{
+    display: block;
+    height: 55px;
+    width: 80%;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #615f5fda;
+
+    font-size: 16px;
+    padding: 8px 20px;
+
+
+
+    max-width: 360px;
+
+
+    display: flex;
+    align-items: center;
+
+    background: #EDEBEB;
+}
+button{
+    background: #9877CD;
+    
+}
+
+#login{
+    width: 320px;
+    margin: 200px 200px;
+   
+}

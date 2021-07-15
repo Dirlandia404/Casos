@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecoleta</title>
+    <!--pegar fontes-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="/src/style/home.css">
+
+
+
+    <link rel="stylesheet" href="/src/style/midia.css">
+</head>
+<body>
+
+    <div id="login">
+       <form action="">
+
+           <h1>Cadastro do ponto de Coleta</h1>
+           <fieldset>
+                <legend>
+                    <h2>Dados da Entidade</h2>
+                </legend>
+
+                <div class="field">
+                    <label for="name">Nome da Entidade</label>
+                    <input type="text" name="name" required>
+                </div>
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="adress">Endereço</label>
+                        <input type="text" name="adress" required>
+
+                    </div>
+                    <div class="field">
+                        <label for="adress2">Numero/Complemento</label>
+                        <input type="text" name="adress2" required>
+
+                    </div>
+                </div>
+                
+                <div class="field-group">
+                    <div class="field">
+                        <label for="states">Estado</label>
+                        <select name="uf" required>
+                            <option value="">Selecione o Estado</option>
+                           
+                        </select>
+
+                    </div>
+                    <div class="field">
+                        <label for="cities">Cidade</label>
+                        <select name="city" disabled required>
+                            <option value="">Selecione a Cidade</option>
+                        </select>
+
+                        <input type="hidden" name="state">
+                    </div>
+                    
+                </div>
+                
+           </fieldset>
+
+
+           <button type="submit">Cadastro do ponto de Coleta</button>
+
+       </form>
+</div>
+
+
+</body>
+</html>

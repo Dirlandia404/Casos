@@ -1,0 +1,19 @@
+input{
+    display: block;
+}
+#page-login{
+    height: 50vh;
+    background: url('/public/Group\ 15.svg') no-repeat;
+    background-position: 38vw;
+}
+#login{
+    
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+
+
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+}

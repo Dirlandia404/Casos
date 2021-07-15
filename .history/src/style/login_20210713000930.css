@@ -1,0 +1,65 @@
+#id{
+    height: 100vh;
+    background: url('/public/Group\ 15.svg') no-repeat;
+    background-position: center;
+}
+
+form{
+
+    margin-top: 80px;
+    /*preenchimento da caixa*/
+    padding: 64px;
+
+    border-radius: 8px;
+
+    max-width: 730px;
+    flex-direction: column;
+
+}
+
+
+form h1{
+    font-size: 36px;
+
+}
+form fieldset{
+    margin-top: 64px;
+
+    border: 0;
+
+    flex-direction: column;
+}
+
+form .field-group{
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+form input,
+form select{
+    background-color: #f5f5f5;
+
+    border: 0;
+
+    padding: 16px 24px;
+
+    font-size: 16px;
+
+    flex-direction: column;
+    border-radius: 8px;
+    /*tira linha preta no campo*/
+    /*outline: none;*/
+}
+form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+}

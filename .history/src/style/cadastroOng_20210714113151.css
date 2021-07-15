@@ -1,0 +1,11 @@
+fieldset{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+input{
+    margin: 20px;
+    padding: 10px 20px;
+}

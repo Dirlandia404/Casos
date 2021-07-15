@@ -1,0 +1,32 @@
+input,button{
+    display: block;
+    height: 55px;
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: none;
+
+    font-size: 16px;
+
+
+
+    max-width: 360px;
+
+
+    display: flex;
+    align-items: center;
+
+
+    background: #EDEBEB;
+
+    transition: 400ms;
+}
+button{
+    background: #9877CD;
+}
+
+#login{
+    width: 420px;
+    margin: 150px auto 0px auto;
+   
+}

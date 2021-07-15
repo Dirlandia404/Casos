@@ -1,0 +1,16 @@
+input{
+    display: block;
+}
+
+#login{
+    background-color: blueviolet;
+
+    max-width: 560px;
+
+    flex: 1;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

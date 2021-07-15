@@ -1,0 +1,12 @@
+input{
+    display: block;
+}
+#page-login{
+    height: 100vh;
+    background: url('/public/Group\ 15.svg') no-repeat;
+    background-position: 38vw;
+}
+#login{
+    width: 420px;
+   
+}

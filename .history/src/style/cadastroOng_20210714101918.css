@@ -1,0 +1,104 @@
+#page-create-point{
+    background-color: #D1D1D1;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#page-create-point .field{
+    color:#3A2C51;
+}
+
+#page-create-point form{
+    background-color: white;
+    padding: 64px;
+
+    max-width: 750px;
+    border-radius: 8px;
+    margin-top: 40px;
+    align-items: center;
+ 
+
+   
+}
+
+
+#page-create-point form fieldset{
+    margin-top: -50px;
+
+    border: 0;
+    display: flex;
+      
+   
+    padding: 64px;
+    
+    max-width: 750px;
+       
+
+   
+   
+}
+#page-create-point form .field{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    
+    
+}
+
+
+#page-create-point form input{
+    /*background-color: #f0f0f5;*/
+    flex: 1;
+    border: 0;
+    padding: 16px 24px;
+
+
+    font-family: 'Roboto';
+    font-style: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 29px;
+    color: #3A2C51;
+
+
+}
+#page-create-point form button{
+    width: 260px; 
+    height: 56px;
+   
+
+    background-color: #3A2C51;
+    
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+
+    border: 0;
+
+    margin-top: 16px;
+    transition: 400ms;
+
+}
+
+
+#page-create-point .logomarca strong{
+    display: flex;
+    margin-top: 16px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+img{
+    width: 300px;
+    height: 200px;
+    object-fit: fill;
+
+}

@@ -1,0 +1,36 @@
+#id{
+    height: 100vh;
+    background: url('/public/Group\ 15.svg') no-repeat;
+   
+}
+
+form{
+
+    margin-top: 80px;
+    /*preenchimento da caixa*/
+    padding: 64px;
+
+    border-radius: 8px;
+
+    max-width: 730px;
+
+}
+
+
+form h1{
+    font-size: 36px;
+
+}
+form fieldset{
+    margin-top: 64px;
+
+    border: 0;
+
+}
+
+form .field-group{
+    display: flex;
+
+}
+
+

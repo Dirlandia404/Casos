@@ -1,0 +1,33 @@
+img{
+    position:absolute;
+    width: 40%;
+    left:40%;
+    top:30%;
+    margin-left: 150px;
+    margin-top: -50px;
+}
+
+
+input{
+    display: block;
+    height: 45px;
+    width: 320px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(202, 192, 192);
+
+    font-size: 16px;
+    padding: 10px 20px;
+
+
+}
+
+
+#login{
+    width: 320px;
+    margin: 200px 200px;
+   
+}
+#login h1{
+    padding: 10px;
+}
