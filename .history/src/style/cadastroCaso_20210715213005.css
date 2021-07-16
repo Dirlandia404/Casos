@@ -2,7 +2,7 @@
 #header{
     position: absolute;
     top: 30%;
-    left: 37%;
+    left: 46%;
     transform: translateY(-50%) translateX(-50%);
 
     color: #9877CD;
@@ -15,14 +15,17 @@
     font-size: 20px;
 }
 
+
 fieldset{
     border: 0;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
-    
     transform: translateY(-50%) translateX(-50%);
+    background-color: #382952;
 }
 input{
     margin: 20px 10px;
@@ -36,12 +39,7 @@ input{
     padding:10px 20px;
 
 }
-input[type=address]{
-    width: 170px;
-}
-input[type=address2]{
-    width: 62px;
-}
+
 
 form button{
     width: 230px;
@@ -52,7 +50,7 @@ form button{
     font-weight: bold;
     font-size: 16px;
     border: 0;
-    margin-left: 160px;
+    margin-left: 140px;
     margin-top: 50px;
     transition: 400ms;
     

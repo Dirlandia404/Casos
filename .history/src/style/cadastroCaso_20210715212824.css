@@ -2,7 +2,7 @@
 #header{
     position: absolute;
     top: 30%;
-    left: 37%;
+    left: 46%;
     transform: translateY(-50%) translateX(-50%);
 
     color: #9877CD;
@@ -15,11 +15,15 @@
     font-size: 20px;
 }
 
+
 fieldset{
     border: 0;
-    display: inline-block;
+    display: block;
+    display: flex;
+    flex-direction: column;
+   width: 200px;
     position: absolute;
-    top: 60%;
+    top: 40%;
     left: 50%;
     
     transform: translateY(-50%) translateX(-50%);
@@ -36,12 +40,7 @@ input{
     padding:10px 20px;
 
 }
-input[type=address]{
-    width: 170px;
-}
-input[type=address2]{
-    width: 62px;
-}
+
 
 form button{
     width: 230px;

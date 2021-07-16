@@ -2,7 +2,7 @@
 #header{
     position: absolute;
     top: 30%;
-    left: 37%;
+    left: 46%;
     transform: translateY(-50%) translateX(-50%);
 
     color: #9877CD;
@@ -14,6 +14,7 @@
     margin-bottom: 90px;
     font-size: 20px;
 }
+
 
 fieldset{
     border: 0;
@@ -40,7 +41,7 @@ input[type=address]{
     width: 170px;
 }
 input[type=address2]{
-    width: 62px;
+    width: 40px;
 }
 
 form button{

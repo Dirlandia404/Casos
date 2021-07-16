@@ -1,8 +1,9 @@
 
 #header{
+   
     position: absolute;
     top: 30%;
-    left: 37%;
+    left: 50%;
     transform: translateY(-50%) translateX(-50%);
 
     color: #9877CD;
@@ -14,6 +15,7 @@
     margin-bottom: 90px;
     font-size: 20px;
 }
+
 
 fieldset{
     border: 0;

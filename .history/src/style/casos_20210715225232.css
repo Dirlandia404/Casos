@@ -1,0 +1,15 @@
+.lovey-dovey {
+    color: red;
+}
+
+#official-info {
+    background: rgb(230, 230, 230);
+    width: 70%;
+    height: 180px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#cute-cat {
+    width: 120px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre um novo Caso</title>
+
+    <link rel="stylesheet" href="/src/style/cadastroCaso.css">
+
+
+
+    <link rel="stylesheet" href="/src/style/midia.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script>
+        
+        $('.telefone').mask('(00) 0 0000-0000');
+        $("#dinheiro").mask('#.##0,00', {reverse: true});
+        $('.estado').mask('AA');
+        $('.cpf').mask('000-000.000-00');
+ 
+    </script>
+        <!--input type="text" name="telefone" class="telefone form-control" "--> 
+</head>
+<body>
+    <header>
+        <a href="/src/pages/casosCadastrados"><img src="/public/Arrow 1.svg" alt="voltar"></a>
+    </header>
+    <div id="header">
+        <h1>Cadastre um novo Caso</h1>
+        <p>Dessa forma mais pessoas poderão ajudar, juntamente com você! </p>
+    </div>
+    
+    <div id="formulario">
+        <form action="">
+            <fieldset>
+                <div>
+                    <input type="text" placeholder="Nomeie um titulo para o caso">
+                    
+                    <input type="text" placeholder="faça uma descrição do caso">
+                    
+                    <input type="text" class="form-control" onkeypress="$(this).mask('R$ #.###0,00', {reverse: true});" placeholder="Diga um valor para solucionar">
+                    
+                </div>
+              
+                <button type="submit">Cadastrar</button>
+            </fieldset>
+
+
+        </form>
+    </div>
+</body>
+</html>
+
