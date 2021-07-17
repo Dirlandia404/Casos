@@ -1,0 +1,80 @@
+#page-casos{
+    background-color: #D1D1D1;
+    width: 90%;
+    margin:  0 auto;
+    min-height: 1200px;
+    background-color: white;
+}
+
+#page-casos header{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-casos header a{
+    font-size: 500%;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+#page-casos h6{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+  
+
+h6{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#box-casos{
+    width: 100%;
+    padding: 0 30px;
+    margin: 32px auto;
+}
+
+#box-casos .dados{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+#box-casos ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 24px;
+    list-style: none;
+}
+
+
+#box-casos ul li{
+background-color: #f5f5f5;
+border: 2px solid  #f5f5f5;
+border-radius: 8px;
+height: 100%;
+width: 100%;
+font-size: 16px;
+}
+
+#box-casos ul li strong{
+margin-top: 5px;
+font-size: 15px;
+margin-left: 10px;
+}
+
+#box-casos ul li strong h7{
+color: #242424;
+font-size: 13px;
+font-style: oblique;
+}
+
+
+
+.dados{
+display: flex;
+justify-content: space-between;
+}
+  
+  

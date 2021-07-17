@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casos</title>
+
+    <link rel="stylesheet" href="/src/style/casos.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-Vindo</h1>
+        <p>Escolha um dos casos abaixo e ajude :)</p>
+
+        <a href="/src/pages/casosConcluidos.html">Casos concluidos</a>
+
+    </header>
+    <div id="page-produtos">
+        <header>
+          <img src={logoImg} alt="logomarca" />
+          <a href="addProduto">
+            <FiPlusCircle color="#3A2C51" />
+          </a>
+        </header>
+        <h6>Bem Vindo ao sistema de administração {nome}</h6>
+        <div class="produtos">
+          <ul>
+            {produtos.map(produtos => (
+              <li key={produtos.idProduto}>
+                <img src={produtos.imgProduto} alt="" />
+                <div class="menu">
+                  <div class="field">
+                    <strong>Cod: <h7> {produtos.idProduto}</h7></strong>
+                    <strong>Nome: <h7>{produtos.nomeProduto}</h7></strong>
+                    <div class="field-group">
+                      <strong>Preço: <h7> {produtos.precoProduto}</h7></strong>
+                      <strong>Peso: <h7> {produtos.pesoProduto}</h7></strong>
+                    </div>
+                  </div>
+                  <div class="botoes">
+                    <div class="apagar">
+  
+                      <button onClick={() => handleDeleteIncident(produtos.idProduto)} type="button">
+                        <FiTrash2 color="#3A2C51" />
+                      </button>
+                    </div>
+                    <div class="editar">
+                      <button onClick={() => handleEdit(produtos.idProduto)} type="button">
+                        <FiEdit color="#3A2C51" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+        
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casos</title>
+
+    <link rel="stylesheet" href="/src/style/casos.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-Vindo</h1>
+        <p>Escolha um dos casos abaixo e ajude :)</p>
+
+        <a href="/src/pages/casosConcluidos.html">Casos concluidos</a>
+
+    </header>
+    <div id="editarprodutos">
+        <header>
+        </header>
+        {produtos.map(produtos => (
+          <form onSubmit={handleEditarProduto} key={produtos.idProduto}>
+            <legend>
+              <h2>Editar Produto</h2>
+            </legend>
+            <div class="field">
+              <label for="name">Nome:</label>
+              <input
+                type="text"
+                name="name"
+                
+                placeholder={produtos.nomeProduto}
+                value={nomeProduto}
+                onChange={e => setnomeProduto(e.target.value)}
+              />
+              <div class="fieldGrup">
+                <div>
+                  <label for="valor">Preço:</label>
+                  <input
+                    type="text"
+                    name="valor2"
+                    placeholder={produtos.precoProduto}
+                    value={precoProduto}
+                    onChange={e => setprecoProduto(e.target.value)}
+                  />
+                </div>
+                <div class="margin">
+                  <label for="valor2">Peso:</label>
+                  <input
+                    type="text"
+                    name="valor2"
+                    placeholder={produtos.pesoProduto}
+                    value={pesoProduto}
+                    onChange={e => setpesoProduto(e.target.value)}
+                  />
+                </div>
+              </div>
+              <div class="fieldGrup">
+                <div>
+                  <div class="fieldGrup">
+                    <div class="fieldGrupimg">
+                      <label for="tipo">Tipo:</label>
+                      <input type="text"
+                        name="tipo"
+                        placeholder={produtos.nomeTipo}
+                        value={nomeTipo}
+                        onChange={e => setnomeTipo(e.target.value)}
+                      />
+                      <label for="img">imagem:</label>
+                      <input type="file"
+                        name="file"
+                        id="file"
+                        placeholder={produtos.imgProduto}
+                        value={imgProdutolocal}
+                        onChange={e => setimgProdutolocal(e.target.value)}
+                      />
+                    </div>
+                    <img src={produtos.imgProduto} alt="produto" img />
+                  </div>
+  
+                </div>
+              </div>
+              <div class="fieldGrup">
+                <div>
+                  <label for="valor">Descrição:</label>
+                  <textarea
+                    placeholder={produtos.descricaoProduto}
+                    value={descricaoProduto}
+                    onChange={e => setdescricaoProduto(e.target.value)}
+                  />
+                </div>
+                <div class="GrupBotton">
+                  <button type="submit">Editar</button>
+  
+                  <button onClick={() => voltar()} >Voltar</button>
+  
+                </div>
+              </div>
+            </div>
+          </form>
+        ))}
+      </div>
+        
+</body>
+</html>
