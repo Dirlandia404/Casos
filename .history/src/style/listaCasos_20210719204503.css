@@ -1,22 +1,48 @@
-h6{
-    margin-top: 2%;
+
+header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+header h6{
+    margin-top: 50px;
     margin-left: 117px;
     margin-bottom: 20px;
     font-size: 30px;
     color: #9877CD;
 }
 
-header{
+
+header a button{
+    width: 230px;
+    height: 40px;
+    background-color: #9877CD;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin-left: 160px;
+    margin-right: 130px;
+    margin-top: 50px;
+    transition: 400ms;
+}
+#linha2{
     display: flex;
     justify-content: space-between;
 }
-
-header p{
-    margin-left: 117px;
-    
-    font-size: 20px;
-    color: #726e6e;
+#linha2 p{
+    margin-top: 50px;
+    margin-left: 90px;
+    font-size: 25px;
+    color: #9877CD;
 }
+#linha2 a{
+    margin-top: -45px;
+    margin-right: 50px;
+    font-size: 16px;
+}
+
 
 #box-casos{
     width: 100%;
@@ -83,4 +109,18 @@ h7{
     margin-left: 20px;
     
 
+}
+#ajudar button{
+    width: 100px;
+    height: 30px;
+    background-color: #1bce1b;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    margin: 20px;
+    transition: 400ms;
+}
+#ajudar button:hover{
+    background-color: #083508;
 }

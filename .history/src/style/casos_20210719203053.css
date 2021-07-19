@@ -17,6 +17,25 @@ header p{
     font-size: 20px;
     color: #726e6e;
 }
+header a{
+    font-size: 500%;
+    margin-top: -80px;
+    margin-right: 1%;
+}
+header button{
+    width: 230px;
+    height: 40px;
+    background-color: #9877CD;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin-left: 160px;
+    margin-right: 50px;
+    transition: 400ms;
+}
+
 
 #box-casos{
     width: 100%;
@@ -83,4 +102,7 @@ h7{
     margin-left: 20px;
     
 
+}
+button #ajudar{
+    background-color: #242424;
 }

@@ -17,6 +17,22 @@ header p{
     font-size: 20px;
     color: #726e6e;
 }
+#voltar{
+    display: flex;
+    justify-content: space-between;
+}
+#voltar p{
+    margin-top: 50px;
+    margin-left: 90px;
+    font-size: 25px;
+    color: #9877CD;
+}
+#voltar a{
+    margin-top: -45px;
+    margin-right: 50px;
+    font-size: 16px;
+}
+
 
 #box-casos{
     width: 100%;

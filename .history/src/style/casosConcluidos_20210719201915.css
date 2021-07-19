@@ -17,6 +17,9 @@ header p{
     font-size: 20px;
     color: #726e6e;
 }
+header a img{
+    margin-right: 120px;
+}
 
 #box-casos{
     width: 100%;

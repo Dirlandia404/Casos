@@ -3,10 +3,7 @@ header{
 }
 #header{
     align-items: center;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
+    
 
     color: #9877CD;
     font-family: "Montserrat";

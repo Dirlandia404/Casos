@@ -17,6 +17,12 @@ header p{
     font-size: 20px;
     color: #726e6e;
 }
+header a{
+    font-size: 500%;
+    margin-top: -80px;
+    margin-right: 100px;
+}
+
 
 #box-casos{
     width: 100%;

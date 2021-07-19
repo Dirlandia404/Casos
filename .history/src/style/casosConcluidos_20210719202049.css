@@ -17,6 +17,9 @@ header p{
     font-size: 20px;
     color: #726e6e;
 }
+#voltar{
+    margin-right: 150px;
+}
 
 #box-casos{
     width: 100%;
