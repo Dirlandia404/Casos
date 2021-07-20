@@ -12,15 +12,13 @@
 
     <link rel="stylesheet" href="/src/style/midia.css">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
    
 </head>
 <body>
     
     <div id="header">
-        <h1>Cadastre-se e seja um Doador</h1>
-        <p>Assim você poderá ajudar diversas ONGs que precisam da sua ajuda !</p>
+        <h1>Cadastre-se</h1>
+        <p>Assim você poderá ajudar!</p>
     </div>
     
     <div id="formulario">
@@ -28,8 +26,11 @@
             <fieldset>
                 <div>
                     <input type="text" placeholder="Digite o seu nome">
-                    <input type="text" class="form-control" onkeypress="$('.cpf').mask('000-000.000-00');" placeholder="Digite o seu cpf">
-                    
+                    <select name="select">
+                        <option value="valor1">Doador</option>
+                        <option value="valor2" selected>Ong</option>
+                       
+                      </select>
                     <input type='tel' size='10' placeholder="Digite o numero telefone">
                     <input type="email" placeholder="Digite o seu email">
                    
