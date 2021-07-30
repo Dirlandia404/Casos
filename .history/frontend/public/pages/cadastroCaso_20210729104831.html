@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+
+    var logado = sessionStorage.getItem('key')
+    var logado_key = sessionStorage.getItem('key_id')
+
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre um novo Caso</title>
+
+    <link rel="stylesheet" href="src/style/cadastroCaso.css">
+
+
+
+    <link rel="stylesheet" href="src/style/midia.css">
+
+
+</head>
+<body>
+    <header>
+        <a href="listaCasos.html"><img src="public/Arrow 1.svg" alt="voltar"></a>
+    </header>
+    <div id="header">
+        <h1>Cadastre um novo Caso <script type="text/javascript">document.write(logado)</script></h1>
+        <p>Dessa forma mais pessoas poderão ajudar, juntamente com você! </p>
+    </div>
+    
+    <div id="formulario">
+        <form action="error" method="post">
+            <fieldset>
+                <div>
+                    <input type="text" placeholder="Nomeie um titulo para o caso" id="title">
+                    
+                    <input type="text" placeholder="faça uma descrição do caso" id="description">
+                    
+                    <input type="text" class="form-control" placeholder="Diga um valor para solucionar" id="value">
+                    
+                </div>
+              
+                <button type="submit" id="cadastrar">Cadastrar</button>
+            </fieldset>
+
+
+        </form>
+    </div>
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+
+
+
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+   <script type="text/javascript" src="https://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+   <script type="text/javascript">
+
+
+
+
+
+
+
+  $( "#cadastrar" ).click(function() {
+            
+  var title_ = document.getElementById('title').value;
+  var description_ = document.getElementById('description').value;
+  var value_ = document.getElementById('value').value;
+  var user_id_ = String(logado_key);
+  var status_ = 'Pendente';
+
+  console.log(title_)
+  console.log(description_)
+  console.log(value_)
+  console.log(user_id_)
+  console.log(status_)
+
+
+  if(title_ === "") {
+      window.location.replace("http://localhost:8080/pages");
+
+
+
+  }else{
+          axios.post('http://localhost:3333/cases', {
+          title: title_,
+          description: description_,
+          value: value_,
+          user_id: user_id_,
+          status: status_
+
+        })
+        .then(function (response) {
+          console.log(response)
+          window.location.replace("http://localhost:8080/pages/listaCasos.html");
+        })
+        .catch(function (error) {
+          console.log(error)
+          
+        });
+  }
+ 
+  
+
+
+
+});
+
+   </script>
+

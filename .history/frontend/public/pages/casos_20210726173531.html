@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript">
+ 
+var logado = sessionStorage.getItem('key')
+
+  </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casos</title>
+
+    <link rel="stylesheet" href="src/style/casos.css">
+    <link rel="stylesheet" href="src/style/midia.css">
+</head>
+<body>
+    <h6 id="login">Bem-Vindo, <script type="text/javascript">document.write(logado);</script></h6>
+    <header>
+        
+        <p>Escolha um dos casos abaixo e ajude :)</p>
+        <a href="casosConcluidos.html">
+            <button>Casos concluidos</button> 
+        </a>
+
+         </header>
+
+       <div id="box-casos">
+           <ul id="teste">
+               
+           </ul>
+       </div>
+
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+
+<script>
+
+    class Api{
+     static async getCases (page){
+       axios.get(`http://localhost:3333/cases?page=${page}`)
+      .then(response => list_cases(response.data))
+      .catch(error => console.log(error)) 
+     }
+  }
+
+if(logado === '' || logado === 'null')  {
+
+}else{
+  Api.getCases('1')
+}
+
+ const list_cases = ( cases ) => {
+
+    const bycases = document.getElementById('teste')
+    cases.map(cases => {
+
+      const li_casos = document.createElement('li')
+
+      const div_aju = document.createElement('div')
+      div_aju.setAttribute("id", "ajudar");
+
+      const btn_aju = document.createElement("BUTTON");
+      btn_aju.innerHTML = "Ajudar";  
+
+      const div_dados = document.createElement('div')
+      div_dados.className = 'dados';
+
+      const case_id_str = document.createElement("strong");
+      case_id_str.innerHTML = "Caso ";  
+
+      const case_id_h7 = document.createElement("h7");
+      case_id_h7.innerHTML = `${cases.title}`;  
+
+
+      const case_desc_str = document.createElement("strong");
+      case_desc_str.innerHTML = "Descrição ";  
+
+      const case_desc_h7 = document.createElement("h7");
+      case_desc_h7.innerHTML = `${cases.description}`;  
+
+
+      const case_vl_str = document.createElement("strong");
+      case_vl_str.innerHTML = "Valor ";  
+
+      const case_vl_h7 = document.createElement("h7");
+      case_vl_h7.innerHTML = `${cases.value}`;  
+
+      const case_sta_str = document.createElement("strong");
+      case_sta_str.innerHTML = "Status ";  
+
+      const case_sta_h7 = document.createElement("h7");
+      case_sta_h7.innerHTML = `${cases.status}`;  
+      //div id fieldset
+
+      const div_field = document.createElement('div')
+      div_field.setAttribute("id", "fieldset");
+
+      const case_sta_cont = document.createElement("strong");
+      case_sta_cont.innerHTML = "Contato ";  
+
+      const btn_what = document.createElement("BUTTON");
+      btn_what.innerHTML = `${cases.whatsapp}`;  
+
+      const btn_email = document.createElement("BUTTON");
+      btn_email.innerHTML = `${cases.email}`;  
+   
+        bycases.appendChild(li_casos)
+        li_casos.appendChild(div_aju)
+        div_aju.appendChild(btn_aju)
+        li_casos.appendChild(div_dados)
+        div_dados.appendChild(case_id_str)
+        div_dados.appendChild(case_id_h7)
+
+        div_dados.appendChild(case_desc_str)
+        div_dados.appendChild(case_desc_h7)
+
+        div_dados.appendChild(case_vl_str)
+        div_dados.appendChild(case_vl_h7)
+
+        div_dados.appendChild(case_sta_str)
+        div_dados.appendChild(case_sta_h7)
+
+        li_casos.appendChild(div_field)
+
+        div_field.appendChild(case_sta_cont)
+        div_field.appendChild(btn_what)
+        div_field.appendChild(btn_email)
+
+    })
+  }
+
+</script>
+

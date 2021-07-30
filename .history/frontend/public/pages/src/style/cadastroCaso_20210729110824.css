@@ -1,0 +1,103 @@
+body{
+    background-color: #d5cce4dc;
+    
+}
+h1{
+    margin-top: 5%;
+    margin-left: 15%;
+    
+    color: #190933;
+    font-family: sans-serif;
+    
+}
+p{
+    
+    margin-top: 20px;
+    margin-left: 14%;
+    font-size: 18px;
+    color: #190933;
+    font-family: sans-serif;
+    
+}
+
+
+header{
+    margin: 50px;
+}
+#header{
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+    color: #9877CD;
+    font-family: "Montserrat";
+    
+}
+#header p{
+    margin-top: 20px;
+    margin-bottom: 90px;
+    font-size: 20px;
+}
+
+form{
+    align-items: center;
+    text-align: center;
+    margin: 1%;
+    background-color: #523529;
+    
+    width: 500px;
+    
+}
+#formulario{
+    max-width: 500px;
+    margin-top: 5%;
+    margin-left: 30%;
+    position: absolute;
+    
+    background-color: #cd8877;
+   
+}
+
+input{
+    margin: 20px 10px;
+    padding: 10px 20px;
+    background-color: #BEB7B7;
+    width: 260px;
+    border-radius: 8px;
+    border: 1px solid rgb(202, 192, 192);
+
+    font-size: 16px;
+  
+}
+
+
+form button{
+    width: 230px;
+    height: 40px;
+    background-color: #9877CD;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin-left: 40px;
+    margin-top: 50px;
+    transition: 400ms;
+    
+}
+form button:hover{
+    background-color: #382952;
+}
+
+#lado-d{
+    position:absolute;
+    left:51%;
+    top:20%;
+   
+}
+
+#lado-d img{
+    width: 90%;
+}

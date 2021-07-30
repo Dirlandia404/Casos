@@ -1,0 +1,136 @@
+#page-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 75%;
+    width: 85%;
+}
+#conteudo-left{
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+
+    float:left;
+
+    background-color:#FF0;
+}
+#conteudo-right img{
+    width: 80%;
+    height: 100%;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 190px;
+    
+    background-color:#F00;
+        
+}
+
+
+/*body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+#page-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 75%;
+    width: 85%;
+}
+
+#page-home #conteudo-left{
+    /*
+    width: 40%;
+    height: 100%;
+
+    display: flex;*/
+
+    /*Novamente definimos a largura da div
+    width:500px;
+    /* altura da div 
+    height:300px;
+    /* O atributo Float é utilizado para fazermos o nosso bloco(div)
+    literalmente flutue e se posicione onde queremos na página,
+    quando escolhemos left, dizemos que esse bloco irá se posicionar na
+    parte esquerda da página 
+    float:left;
+    /* Cor de fundo da div 
+    background-color:#FF0;
+}
+
+#page-home main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    width: 100%;
+}
+#page-home main h1{
+    font-size: 2.1rem;
+    color: #190933;
+    width: calc(100% + 4rem);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#page-home main a:first-of-type {
+    margin-top: 50px;
+}
+
+#page-home main a{
+    width: 80%;
+    padding: 1rem 0; 
+    margin-top: 20px;
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #9877CD;
+    transition: 300ms;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+#page-home main a:hover{
+    background-color: #190933;
+}
+
+#page-home #conteudo-right img{
+    width: 80%;
+    height: 100%;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 190px;
+    /*Novamente definimos a largura da div*/
+    
+    /* altura da div */
+    
+    /* Pode parecer meio estranho usarmos o mesmo atributo left para o bloco
+    em que queremos posicionar na direita, mas como sabemos, o CSS é um estilo
+    em cascata, nossa div conteúdo definimos a largura de 1000px e na
+    conteudo-left 500px, automaticamente ao definirmos o conteudo-right
+    com 500px e à esquerda também, ele ficou à direita do conteudo-left,
+    pois o máximo que a div filha poderá ter é 1000px, sendo 500+500=1000px 
+    float:left;
+    /* Cor de fundo da div 
+    background-color:#F00;
+        
+}
+*/

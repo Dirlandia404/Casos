@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--pegar fontes-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="src/style/login.css">
+
+
+
+    <link rel="stylesheet" href="src/style/midia.css">
+</head>
+<body>
+    <div id="page-login">
+        <div id="lado-d">
+            <p>
+                Seja um doador e ajude uma ONG a conseguir suprimentos
+            </p>
+            <img src="public/Group 15.svg" alt="">
+        </div>
+        <div id="login">
+            <h1>Login</h1>
+            <form action="val" method="">
+                <input type="text" placeholder="Usuário" id="log">
+                <input type="password" placeholder="senha" id="pas">
+                <input type="submit" placeholder="Entrar" id="logando">
+                
+                
+                <a href="cadastro.html">>Não é cadastrado? Clique aqui</a>
+            </form>
+        </div>
+
+    </div>
+
+   
+</body>
+</html>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+
+<script type="text/javascript">
+    
+      $( "#logando" ).click(function() {
+            
+ 
+  var login_ = document.getElementById('log').value;
+  var password_ = document.getElementById('pas').value;
+  var myHeaders = new Headers();
+
+    axios.post('http://localhost:3333/sessions', {
+    login: login_,
+    password: password_
+  })
+  .then(function (response) {
+   console.log(response)
+   sessionStorage.setItem('key',login_);
+   window.location.replace("http://localhost:8080/pages/casos.html");
+
+  })
+  .catch(function (error) {
+    console.log(error)
+    window.location.replace("http://localhost:8080/pages/loginDoador.html");
+  });
+
+
+
+    });
+
+
+</script>

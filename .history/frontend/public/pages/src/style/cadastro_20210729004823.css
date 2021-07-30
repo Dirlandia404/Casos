@@ -1,0 +1,85 @@
+body{
+    background-color: #d5cce4dc;
+    
+}
+h1{
+    margin-top: 5%;
+    margin-left: 5%;
+    
+    color: #190933;
+    font-family: sans-serif;
+    
+}
+p{
+    
+    margin-top: 20px;
+    margin-left: 5%;
+    font-size: 18px;
+    color: #190933;
+    font-family: sans-serif;
+    
+}
+
+form{
+    text-align: center;
+ 
+}
+#formulario{
+    max-width: 800px;
+    margin: 5%;
+    display: flex;
+    
+}
+
+input,select{
+    margin: 20px 10px;
+    padding: 10px 20px;
+    background-color: #BEB7B7;
+    width: 260px;
+    border-radius: 8px;
+    border: 1px solid rgb(202, 192, 192);
+
+    font-size: 16px;
+  
+}
+input[type=address]{
+    width: 130px;
+}
+input[type=address2]{
+    width: 62px;
+}
+select{
+    width: 300px;
+    margin-left: -5%;
+}
+
+form button{
+    width: 230px;
+    height: 40px;
+    background-color: #9877CD;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin-left: 40px;
+    margin-top: 50px;
+    transition: 400ms;
+    
+}
+form button:hover{
+    background-color: #382952;
+}
+
+
+#lado-d{
+    position:absolute;
+    left:40%;
+    top:20%;
+    margin-left: 150px;
+    margin-top: -50px;
+}
+
+img{
+    width: 90%;
+}

@@ -1,0 +1,79 @@
+
+form{
+    text-align: center;
+    
+    
+}
+#lado-d{
+    position:absolute;
+    left:40%;
+    top:30%;
+    margin-left: 150px;
+    margin-top: -50px;
+}
+#lado-d p{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5E5E5E;
+    text-align: justify;
+    margin-right: 150px;
+    margin-bottom: 50px;
+}
+img{
+    width: 70%;
+}
+
+#login{
+    max-width: 500px;
+    width: 320px;
+    margin: 200px 200px;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    
+   
+}
+#login h1{
+    padding: 10px;
+    color: #190933;
+    font-family: sans-serif;
+}
+#login span{
+    justify-items: center;
+    justify-content: center;
+}
+#login a{
+    align-items: center;
+    justify-content: center;
+    transition: 400ms;
+}
+#login a:hover{
+    color: rgb(9, 231, 9);
+}
+input{
+    display: block;
+    height: 45px;
+    width: 100%;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(202, 192, 192);
+
+    font-size: 16px;
+    padding:10px 20px;
+
+    color: #190933;
+    
+    
+}
+input[type=submit]{
+    background: #9877CD; 
+    color: white;
+    text-align: center;
+    transition: 400ms;
+}
+
+input[type=submit]:hover{
+    background-color: #190933;
+}
+

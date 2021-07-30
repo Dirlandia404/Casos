@@ -1,0 +1,54 @@
+
+form{
+    text-align: center;
+    
+}
+#lado-d{
+    position:absolute;
+    left:40%;
+    top:30%;
+    margin-left: 150px;
+    margin-top: -50px;
+}
+
+img{
+    width: 90%;
+}
+
+#home{
+    max-width: 500px;
+    width: 320px;
+    margin: 200px 200px;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    
+   
+}
+#home h1{
+    padding: 10px;
+    color: #190933;
+    font-family: sans-serif;
+}
+
+.button {
+    width: 230px;
+    height: 40px;
+    background-color: #9877CD;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin-left: 40px;
+    margin-top: 50px;
+    transition: 400ms;
+
+}
+.button:hover{
+    background-color: #190933;
+}
+
+
+

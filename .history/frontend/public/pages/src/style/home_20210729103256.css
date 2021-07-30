@@ -1,0 +1,60 @@
+
+form{
+    text-align: center;
+    
+    width: 400px;
+}
+#lado-d{
+    position:absolute;
+    left:50%;
+    top:10%;
+}
+
+img{
+    width: 90%;
+}
+
+#home{
+    max-width: 500px;
+    width: 320px;
+    margin: 200px 200px;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+  
+}
+#home h1{
+    padding: 10px;
+    color: #190933;
+    font-family: sans-serif;
+   
+}
+
+.button {
+    display: block;
+    height: 30px;
+    width: 80%;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(202, 192, 192);
+
+  
+    font-size: 16px;
+    padding:10px 20px;
+    background: #9877CD; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: 400ms;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button:hover{
+    background-color: #190933;
+}
+
+
+

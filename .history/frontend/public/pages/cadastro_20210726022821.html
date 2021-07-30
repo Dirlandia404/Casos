@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre se</title>
+
+    <link rel="stylesheet" href="src/style/cadastro.css">
+
+
+
+    <link rel="stylesheet" href="src/style/midia.css">
+
+   
+</head>
+<body>
+    
+    <div id="header">
+        <h1 id="postResult">Cadastre-se</h1>
+        <p>Assim você poderá ajudar!</p>
+
+    </div>
+    
+    <div id="formulario">
+        <form action="error" name="myform" id="myform" class="cad" method="post">
+            <fieldset>
+                <div>
+                    <input type="text" placeholder="Digite o seu nome" name="name" id="name">
+                    <input type="text" placeholder="Digite seu login no sistema" name="login" id="login">
+                    <input type="password" placeholder="Digite sua senha no sistema" name="password" id="password">
+
+                  
+                      <input type="email" placeholder="Digite o seu email" name="email" id="email">
+                    <input type='tel' size='10' placeholder="Digite o numero telefone" name="whatsapp" id="whatsapp">
+                  
+                   
+                </div>
+
+                <div>
+                    
+                    
+                    <input type="address" placeholder="Cidade" name="city" id="city">
+                    <input type="address2" class="form-control" placeholder="UF" name="uf" id="uf">
+
+                      <select name="type" id="type">
+                        <option value="Doador">Doador</option>
+                        <option value="ONG" selected>Ong</option>
+                       
+                      </select>
+                </div>
+                <button type="submit" id="cadastrar">Cadastrar</button>
+            </fieldset>
+
+
+        </form>
+    </div>
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+
+
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+   <script type="text/javascript" src="https://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+   <script type="text/javascript">
+
+
+
+
+
+
+
+  $( "#cadastrar" ).click(function() {
+            
+  var name_ = document.getElementById('name').value;
+  var login_ = document.getElementById('login').value;
+  var password_ = document.getElementById('password').value;
+  var email_ = document.getElementById('email').value;
+  var whatsapp_ = document.getElementById('whatsapp').value;
+  var city_ = document.getElementById('city').value;
+  var uf_ = document.getElementById('uf').value;
+
+  var select = document.getElementById('type');
+  var type_ = select.options[select.selectedIndex].value;
+
+  if(name_ === "") {
+      window.location.replace("http://localhost:8080/pages/loginDoador.html");
+
+
+
+  }else{
+          axios.post('http://localhost:3333/users', {
+          name: name_,
+          login: login_,
+          password: password_,
+          email: email_,
+          whatsapp: whatsapp_,
+          city: city_,
+          uf: uf_,
+          type: type_
+        })
+        .then(function (response) {
+          console.log(response)
+          window.location.replace("http://localhost:8080/pages/");
+        })
+        .catch(function (error) {
+          console.log(error)
+          
+        });
+  }
+ 
+  
+
+
+
+});
+
+   </script>
+

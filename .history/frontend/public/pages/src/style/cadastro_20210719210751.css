@@ -1,0 +1,63 @@
+
+#header{
+    position: absolute;
+    top: 30%;
+    left: 46%;
+    transform: translateY(-50%) translateX(-50%);
+
+    color: #9877CD;
+    font-family: "Montserrat";
+    
+}
+p{
+    margin-top: 20px;
+    margin-bottom: 90px;
+    font-size: 20px;
+}
+
+
+fieldset{
+    border: 0;
+    display: inline-block;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    
+    transform: translateY(-50%) translateX(-50%);
+}
+input,select{
+    margin: 20px 10px;
+    padding: 10px 20px;
+    background-color: #BEB7B7;
+    width: 260px;
+    border-radius: 8px;
+    border: 1px solid rgb(202, 192, 192);
+
+    font-size: 16px;
+    padding:10px 20px;
+
+}
+input[type=address]{
+    width: 170px;
+}
+input[type=address2]{
+    width: 62px;
+}
+
+form button{
+    width: 230px;
+    height: 40px;
+    background-color: #9877CD;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin-left: 160px;
+    margin-top: 50px;
+    transition: 400ms;
+    
+}
+form button:hover{
+    background-color: #382952;
+}
